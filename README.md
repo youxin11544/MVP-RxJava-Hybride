@@ -1,18 +1,10 @@
 # mvp_hybride_framwork
 
-
-
-
-
-架构文档说明连接地址：
-https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
-
-
-
-
-
-
-
+## 架构文档说明连接地址：
+* https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
+* https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
+* https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
+* https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
 
 
 ## 1.App的整个包的部署
