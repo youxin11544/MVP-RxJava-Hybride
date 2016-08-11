@@ -1,5 +1,8 @@
 # mvp_hybride_framwork
 
+架构文档说明连接地址：
+https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
+
 ## 1.App的整个包的部署
 * 整个app采用的是最新的Android api和现在最流行的第三方框架，以及谷歌提倡的MVP设计模式。
 * 整个app分层是按照功能职责来划分的，ui层是安装功能模块来划分的，页面简单的直接用Activity来承载页面，复杂的页面用Activity+Fragment来做，另外采用的是MVP设计模式，将视图view和业务逻辑presernter隔离开来。
