@@ -1,11 +1,10 @@
 # mvp_hybride_framwork
 
+
+## 觉得不错帮忙加个星，谢谢！让我有点成就感，呵呵！
+
 ## 架构文档说明连接地址：
 * https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
-* https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
-* https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
-* https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
-
 
 
 
