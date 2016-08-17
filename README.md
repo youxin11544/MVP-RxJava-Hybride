@@ -8,7 +8,8 @@
 * 一个v对应一个p，多个v对应多个p，但是这个多个p可以都是同一个p的基类继承而来。一个v也可以对应多个p，业务比较复杂的时候。 这方面的东西，还没写到架构中，但是大家可以自己去改，很简单，后期我会给出这方面的代码。
 
 ## 架构文档说明连接地址：
-* https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
+* App Android架构设计  https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
+* Android Hybird的App架构设计  https://shimo.im/doc/DUbkBsq2KMYvA7sE
 
 
 
