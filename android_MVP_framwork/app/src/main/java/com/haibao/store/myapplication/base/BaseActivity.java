@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
-
 import com.google.gson.Gson;
 import com.haibao.store.myapplication.api.Api;
 import com.haibao.store.myapplication.api.ApiWrapper;
@@ -18,20 +17,17 @@ import com.haibao.store.myapplication.common.ActivityPageManager;
 import com.haibao.store.myapplication.reponse.HttpExceptionBean;
 import com.haibao.store.myapplication.utils.ToastUtils;
 import com.haibao.store.myapplication.widget.dialog.DialogLoading;
-
 import java.io.IOException;
-
 import okhttp3.ResponseBody;
 import retrofit2.HttpException;
 import rx.Subscriber;
 import rx.subscriptions.CompositeSubscription;
-
 import static com.google.gson.internal.$Gson$Preconditions.checkNotNull;
 
 /**
  * Acivity  基类
  */
-public abstract class BaseActivity extends AppCompatActivity implements View.OnClickListener {
+public abstract class BaseActivity<T extends BasePresenter> extends AppCompatActivity implements View.OnClickListener {
     protected AppCompatActivity mContext;
     /**
      * 使用CompositeSubscription来持有所有的Subscriptions
@@ -53,6 +49,10 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
      * Api类的包装 对象
      */
     protected ApiWrapper mApiWrapper;
+
+
+    public T presenter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,11 +115,25 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
      */
     public abstract void initView();
 
+
+
     /**
      * 绑定事件
      */
     public abstract void bindEvent();
 
+
+
+
+    /**
+     * 创建相应的 presenter
+     */
+    public void createPresenter(T presenter) {
+        if (presenter != null) {
+            this.presenter = presenter;
+        }
+
+    }
 
     protected void initFromWhere() {
         if (null != getIntent().getExtras()) {
@@ -256,6 +270,10 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         // 如果还想使用CompositeSubscription，就必须在创建一个新的对象了。
         if(mCompositeSubscription != null){
             mCompositeSubscription.unsubscribe();
+        }
+        //解绑 presenter
+        if (presenter != null) {
+            presenter.unsubscribe();
         }
     }
 }

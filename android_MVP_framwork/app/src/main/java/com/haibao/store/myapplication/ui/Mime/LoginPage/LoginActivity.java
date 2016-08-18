@@ -40,7 +40,10 @@ public class LoginActivity extends BaseActivity {
         mLoginFragment.createPresenter(new LoginPresenter(mLoginFragment));
 
 
-
+//        //采用mvp 模式 只有acitivity要初始化api  ------情况4
+//         initApi();
+//        //创建 Presenter 如果不采用mvp 就不要创建
+//        this.createPresenter(new LoginPresenter(this));   // 这里需要 loginacitivity 实现implements LoginContract.View  我这里没做大家自行练习
 
     }
 
