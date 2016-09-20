@@ -9,7 +9,7 @@
 * 不要什么页面都用mvp来做。逻辑简单的变动不大的就不要用mvp了。例如：登录，设置，个人信息修改。。等等，这页面本来就很简单，就算所有业务逻辑代码在activity也没什么。
 ## 架构文档说明连接地址：
 * App Android架构设计  https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
-* Android Hybird的App架构设计  https://shimo.im/doc/DUbkBsq2KMYvA7sE
+* Android Hybird的App架构设计  https://shimo.im/doc/DUbkBsq2KMYvA7sE  https://shimo.im/doc/DUbkBsq2KMYvA7sE
 
 
 
