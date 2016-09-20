@@ -8,8 +8,8 @@
 * 一个v对应一个p，多个v对应多个p，但是这个多个p可以都是同一个p的基类继承而来。一个v也可以对应多个p，业务比较复杂的时候。 这方面的东西，还没写到架构中，但是大家可以自己去改，很简单，后期我会给出这方面的代码。
 * 不要什么页面都用mvp来做。逻辑简单的变动不大的就不要用mvp了。例如：登录，设置，个人信息修改。。等等，这页面本来就很简单，就算所有业务逻辑代码在activity也没什么。
 ## 架构文档说明连接地址：
-* App Android架构设计  https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145
-* Android Hybird的App架构设计  https://shimo.im/doc/DUbkBsq2KMYvA7sE
+* App Android架构设计  https://coding.net/s/f9565dd3-1508-4471-bf01-c711828eb145  文档在coding上面，需要注册一个账号
+* Android Hybird的App架构设计  https://shimo.im/doc/DUbkBsq2KMYvA7sE   文档在 石墨文档 上面，需要注册一个账号
 
 
 
